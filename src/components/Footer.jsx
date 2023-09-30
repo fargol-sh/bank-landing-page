@@ -17,7 +17,7 @@ const Footer = () => (
       <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap
       md:mt-0 mt-10">
         {footerLinks.map((footerLink) => (
-          <div className='flex flex-col ss:my-0 my-4 min-w-[150px]'>
+          <div key={footerLink.title} className='flex flex-col ss:my-0 my-4 min-w-[150px]'>
             <h4 className='font-poppins font-medium text-[18px] leading-[27px]
             text-white'>
               {footerLink.title}
@@ -47,7 +47,7 @@ const Footer = () => (
         {socialMedia.map((social, index) => (
           <img key={social.id} src={social.icon} alt={social.id}
           className={`w-[21px] h-[21px] object-contain cursor-pointer 
-          ${index !== socialMedia.length - 1 ? 'mr-6' : 'mr-0'}`} />
+          social-icons ${index !== socialMedia.length - 1 ? 'mr-6' : 'mr-0'}`} />
         ))}
       </div>
     </div>

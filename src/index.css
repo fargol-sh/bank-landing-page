@@ -143,3 +143,9 @@
   filter: brightness(3.5);
   transition: all .3s;
 }
+
+.social-icons:hover {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(53%) saturate(3807%) 
+  hue-rotate(135deg) brightness(106%) contrast(106%);
+  transition: all .3s;
+}
